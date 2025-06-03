@@ -282,8 +282,15 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
-	text-transform: uppercase;
 	letter-spacing: 0.2rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
 }
 
 h1 a,
@@ -1753,12 +1760,25 @@ body.is-preload #header .content .inner {
 	text-align: center;
 }
 
-#footer .copyright {
+#footer .copyright,
+#footer .design,
+#footer .linkedin {
 	letter-spacing: 0.2rem;
-	font-size: 0.6rem;
 	opacity: 0.75;
 	margin-bottom: 0;
-	text-transform: uppercase;
+}
+
+#footer .copyright {
+	font-size: 0.7rem;
+}
+
+#footer .linkedin {
+	font-size: 0.6rem;
+}
+
+#footer .design {
+	font-size: 0.5rem;
+	opacity: 0.4;
 }
 
 body.is-article-visible #footer {
