@@ -5,7 +5,7 @@
         "store_url": "https://play.google.com/store/apps/details?id=com.haydenduncan.journeymusic"
     },
     "android_dev": {
-        "latest": "1.0.0.31",
+        "latest": "1.0.0.32",
         "minimum": "1.0.0.26",
         "store_url": "https://play.google.com/store/apps/details?id=com.haydenduncan.journeymusic"
     },
@@ -15,7 +15,7 @@
         "store_url": "https://apps.apple.com/app/id6746796582"
     },
     "ios_dev": {
-        "latest": "1.0.0.30",
+        "latest": "1.0.0.32",
         "minimum": "1.0.0.27",
         "store_url": "itms-beta://"
     }
