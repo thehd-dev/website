@@ -4,18 +4,18 @@
         "minimum": "1.0.0.26",
         "store_url": "https://play.google.com/store/apps/details?id=com.haydenduncan.journeymusic"
     },
-    "android_dev": {
+    "android_uat": {
         "latest": "1.0.0.50",
         "minimum": "1.0.0.26",
         "store_url": "https://play.google.com/store/apps/details?id=com.haydenduncan.journeymusic.uat"
     },
     "ios": {
-        "latest": "1.0.0.27",
+        "latest": "1.0.0.50",
         "minimum": "1.0.0.27",
         "store_url": "https://apps.apple.com/app/id6746796582"
     },
-    "ios_dev": {
-        "latest": "1.0.0.49",
+    "ios_uat": {
+        "latest": "1.0.0.50",
         "minimum": "1.0.0.27",
         "store_url": "itms-beta://"
     }
