@@ -325,6 +325,34 @@
                 width: 100%;
             }
         }
+
+        .badge-container {
+            position: relative;
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+
+        .google-badge {
+            display: block;
+            width: 200px;
+            height: auto;
+            opacity: 0.4;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            pointer-events: none; /* make overlay non-interactive */
+        }
+
     </style>
 </head>
 
@@ -335,13 +363,16 @@
         <div class="store-badges">
             <div class="store-entry">
                 <a href="#" class="coming-soon-btn" target="_blank">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                        alt="Get it on Google Play" class="google-badge">
+                    <div class="badge-container">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play" class="google-badge">
+                        <div class="overlay-text">Sign up to Test</div>
+                    </div>
                 </a>
             </div>
 
             <div class="store-entry">
-                <a href="#" class="coming-soon-btn" target="_blank">
+                <a href="https://apps.apple.com/au/app/journey-music/id6752312141" target="_blank">
                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                         alt="Download on the App Store" class="apple-badge">
                 </a>
@@ -440,10 +471,47 @@
 
     <div id="coming-soon-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
         background:rgba(0,0,0,0.6); z-index:1000; align-items:center; justify-content:center;">
-        <div style="background:white; color: #000; padding:2em; border-radius:8px; text-align:center; max-width:400px; margin:auto;">
-            <h2>Coming Soon</h2>
-            <p>Sign up to become a tester today</p>
-            <button onclick="scrollToContact()">Sign up</button>
+        <div style="background:white; color: #000; padding:2em; border-radius:8px; text-align:left; max-width:800px; margin:auto;">
+            <h2>Become a Tester</h2>
+            <p>Hi there 👋</p>
+
+            <p>
+                I'm looking for <strong>12 kind people</strong> to help test my app,
+                <strong>Journey Music</strong> — a simple, offline music player with:
+            </p>
+
+            <p>To become a tester, please follow these steps:</p>
+
+            <ol>
+                <li>
+                <strong>Join the Google Group:</strong> <br>
+                Click the link and hit "Join Group" to get access to the app: <br>
+                <a href="https://groups.google.com/g/journey-music-closed-testing" target="_blank">
+                    https://groups.google.com/g/journey-music-closed-testing
+                </a>
+                </li>
+                <br/>
+                <li>
+                <strong>Download the App:</strong> <br>
+                <a href="https://play.google.com/store/apps/details?id=dev.thehd.journeymusic" target="_blank">
+                    https://play.google.com/store/apps/details?id=dev.thehd.journeymusic
+                </a>
+                </li>
+                <br/>
+                <li>
+                <strong>Have a play:</strong> <br>
+                Import some music and start your next musical adventure 🎶
+                </li>
+                <br/>
+                <li>
+                <strong>Provide feedback:</strong> <br>
+                Feedback links are available inside the app. I'd love to hear your thoughts!
+                </li>
+            </ol>
+
+            <p>Thanks for being part of this journey. If you're working on an app yourself, feel free to send it my way — I'd be happy to test yours too!</p>
+            <button onclick="scrollToContact()">Contact Me</button>
+            <button onclick="closeModal()">Done</button>
         </div>
     </div>
 
@@ -461,8 +529,12 @@
             });
         });
 
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
         function scrollToContact() {
-            modal.style.display = 'none'; // close modal
+            modal.style.display = 'none';
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
 
