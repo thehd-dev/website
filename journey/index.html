@@ -11,7 +11,7 @@
     <title>Journey Music</title>
     <style>
         html {
-           scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -102,7 +102,7 @@
             padding-top: 40px;
         }
 
-        
+
 
         .testing {
             display: flex;
@@ -340,33 +340,6 @@
                 width: 100%;
             }
         }
-
-        .badge-container {
-            position: relative;
-            display: inline-block;
-            transition: opacity 0.3s ease;
-        }
-
-        .google-badge {
-            display: block;
-            width: 200px;
-            height: auto;
-            opacity: 0.2;
-        }
-
-        .overlay-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
-            padding: 5px 10px;
-            border-radius: 5px;
-            pointer-events: none; /* make overlay non-interactive */
-        }
     </style>
 </head>
 
@@ -376,12 +349,9 @@
         <h2>Take your music on a new adventure.</h2>
         <div class="store-badges">
             <div class="store-entry">
-                <a href="#" class="coming-soon-btn" target="_blank">
-                    <div class="badge-container">
-                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                            alt="Get it on Google Play" class="google-badge">
-                        <div class="overlay-text">Sign up to Test</div>
-                    </div>
+                <a href="https://play.google.com/store/apps/details?id=dev.thehd.journeymusic" target="_blank">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                        alt="Get it on Google Play" class="google-badge">
                 </a>
             </div>
 
@@ -398,51 +368,6 @@
         <div class="gallery landscape-gallery">
             <h2>No ads. No subscriptions. No buffering.</h2>
             <img src="./images/landscape1.png" alt="Landscape screenshot 1" class="landscape">
-        </div>
-    </section>
-
-    <section id="testing" class="section full-width-section">
-        <div class="testing">
-            <div class="testing-content">
-                <h2>Android Testers Needed</h2>
-                <p>Hi there 👋</p>
-
-                <p>
-                    I'm looking for <strong>12 kind people</strong> with an <strong>Android phone</strong> to help test my Android app,
-                    <strong>Journey Music</strong> — a simple, offline music player with:
-                </p>
-
-                <p>To become a tester, please follow these steps:</p>
-
-                <ol>
-                    <li>
-                    <strong>Join the Google Group:</strong> <br>
-                    Click the link and hit "Join Group" to get access to the app: <br>
-                    <a href="https://groups.google.com/g/journey-music-closed-testing" target="_blank">
-                        https://groups.google.com/g/journey-music-closed-testing
-                    </a>
-                    </li>
-                    <br/>
-                    <li>
-                    <strong>Download the App:</strong> <br>
-                    <a href="https://play.google.com/store/apps/details?id=dev.thehd.journeymusic" target="_blank">
-                        https://play.google.com/store/apps/details?id=dev.thehd.journeymusic
-                    </a>
-                    </li>
-                    <br/>
-                    <li>
-                    <strong>Have a play:</strong> <br>
-                    Import some music and start your next musical adventure 🎶
-                    </li>
-                    <br/>
-                    <li>
-                    <strong>Provide feedback:</strong> <br>
-                    Feedback links are available inside the app. I'd love to hear your thoughts!
-                    </li>
-                </ol>
-
-                <p>Thanks for being part of this journey. If you're working on an app yourself, feel free to send it my way — I'd be happy to test yours too!</p>
-            </div>
         </div>
     </section>
 
@@ -480,8 +405,6 @@
                     <select name="entry.2056352369" id="entry.2056352369" required>
                         <option value="">-- Choose a reason --</option>
                         <option value="JM - General Inquiry">General Inquiry</option>
-                        <option value="JM - Android tester">Android app - Become a tester</option>
-                        <option value="JM - Apple tester">iOS app - Become a tester</option>
                         <option value="JM - Support">Support</option>
                         <option value="JM - Feedback">Feedback</option>
                         <option value="JM - Feature">Request a Feature</option>
@@ -530,7 +453,8 @@
 
     <div id="coming-soon-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
         background:rgba(0,0,0,0.6); z-index:1000; align-items:center; justify-content:center;">
-        <div style="background:white; color: #000; padding:2em; border-radius:8px; text-align:left; max-width:800px; margin:auto;">
+        <div
+            style="background:white; color: #000; padding:2em; border-radius:8px; text-align:left; max-width:800px; margin:auto;">
             <h2>Become a Tester</h2>
             <p>Hi there 👋</p>
 
@@ -543,38 +467,39 @@
 
             <ol>
                 <li>
-                <strong>Join the Google Group:</strong> <br>
-                Click the link and hit "Join Group" to get access to the app: <br>
-                <a href="https://groups.google.com/g/journey-music-closed-testing" target="_blank">
-                    https://groups.google.com/g/journey-music-closed-testing
-                </a>
+                    <strong>Join the Google Group:</strong> <br>
+                    Click the link and hit "Join Group" to get access to the app: <br>
+                    <a href="https://groups.google.com/g/journey-music-closed-testing" target="_blank">
+                        https://groups.google.com/g/journey-music-closed-testing
+                    </a>
                 </li>
-                <br/>
+                <br />
                 <li>
-                <strong>Download the App:</strong> <br>
-                <a href="https://play.google.com/store/apps/details?id=dev.thehd.journeymusic" target="_blank">
-                    https://play.google.com/store/apps/details?id=dev.thehd.journeymusic
-                </a>
+                    <strong>Download the App:</strong> <br>
+                    <a href="https://play.google.com/store/apps/details?id=dev.thehd.journeymusic" target="_blank">
+                        https://play.google.com/store/apps/details?id=dev.thehd.journeymusic
+                    </a>
                 </li>
-                <br/>
+                <br />
                 <li>
-                <strong>Have a play:</strong> <br>
-                Import some music and start your next musical adventure 🎶
+                    <strong>Have a play:</strong> <br>
+                    Import some music and start your next musical adventure 🎶
                 </li>
-                <br/>
+                <br />
                 <li>
-                <strong>Provide feedback:</strong> <br>
-                Feedback links are available inside the app. I'd love to hear your thoughts!
+                    <strong>Provide feedback:</strong> <br>
+                    Feedback links are available inside the app. I'd love to hear your thoughts!
                 </li>
             </ol>
 
-            <p>Thanks for being part of this journey. If you're working on an app yourself, feel free to send it my way — I'd be happy to test yours too!</p>
+            <p>Thanks for being part of this journey. If you're working on an app yourself, feel free to send it my way
+                — I'd be happy to test yours too!</p>
             <button onclick="scrollToContact()">Contact Me</button>
             <button onclick="closeModal()">Done</button>
         </div>
     </div>
 
-    
+
 
     <script>
         const buttons = document.getElementsByClassName('coming-soon-btn');
@@ -583,8 +508,8 @@
         // Attach click listener to each button
         Array.from(buttons).forEach(button => {
             button.addEventListener('click', function (e) {
-            e.preventDefault();
-            modal.style.display = 'flex';
+                e.preventDefault();
+                modal.style.display = 'flex';
             });
         });
 
@@ -600,7 +525,7 @@
         // Optional: Close modal when clicking outside the content
         modal.addEventListener('click', function (e) {
             if (e.target === modal) {
-            modal.style.display = 'none';
+                modal.style.display = 'none';
             }
         });
     </script>
